@@ -16,3 +16,4 @@ Useful Hooks for creating React-pages.
 - [X] useScroll
 - [X] useTabs
 - [X] useTitle
+- [X] useAxios
