@@ -1,7 +1,7 @@
 {
   "name": "@sooni-hooks/use-click",
-  "version": "1.0.0",
-  "description": "React Hook to  easy way",
+  "version": "1.0.1",
+  "description": "React Hook to connect Click event and function",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"

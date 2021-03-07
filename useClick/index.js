@@ -1,3 +1,5 @@
+import { useRef, useEffect } from "react";
+
 export const useClick = (handleClick) => {
   if (typeof handleClick !== "function") {
     return;
