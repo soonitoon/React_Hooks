@@ -1,6 +1,6 @@
 import { useState } from "react";
 
-export const useInput = (init, verification) => {
+const useInput = (init, verification) => {
   const [value, setValue] = useState(init);
   const onChange = (event) => {
     const {
@@ -19,3 +19,5 @@ export const useInput = (init, verification) => {
     onChange,
   };
 };
+
+export default useInput;

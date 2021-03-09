@@ -1,6 +1,6 @@
 {
   "name": "@sooni-hooks/use-input",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "React Hook to use input easy way",
   "main": "index.js",
   "scripts": {
