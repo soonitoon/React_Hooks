@@ -1,6 +1,6 @@
 import { useRef, useEffect } from "react";
 
-export const useClick = (handleClick) => {
+const useClick = (handleClick) => {
   if (typeof handleClick !== "function") {
     return;
   }
@@ -17,3 +17,5 @@ export const useClick = (handleClick) => {
   }, []);
   return element;
 };
+
+export default useClick;
