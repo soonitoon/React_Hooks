@@ -1,6 +1,6 @@
 {
   "name": "@sooni-hooks/use-fade-in",
-  "version": "1.0.2",
+  "version": "1.0.0",
   "description": "React Hook to use fade in easy way",
   "main": "index.js",
   "scripts": {
