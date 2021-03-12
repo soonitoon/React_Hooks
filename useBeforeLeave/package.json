@@ -1,0 +1,29 @@
+{
+  "name": "@sooni-hooks/use-before-leave",
+  "version": "1.0.0",
+  "description": "React Hook to prevent user from leaving page",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/soonitoon/React_Hooks.git"
+  },
+  "keywords": [
+    "React",
+    "Hook",
+    "Before leave",
+    "useBeforeLeave"
+  ],
+  "author": "soonitoon",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/soonitoon/React_Hooks/issues"
+  },
+  "homepage": "https://github.com/soonitoon/React_Hooks#readme",
+  "peerDependencies": {
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1"
+  }
+}

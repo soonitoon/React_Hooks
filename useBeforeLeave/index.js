@@ -1,4 +1,6 @@
-export const useBeforeLeave = (onLeave) => {
+import { useEffect } from "react";
+
+const useBeforeLeave = (onLeave) => {
   if (typeof onLeave !== "function") {
     return;
   }
@@ -16,3 +18,5 @@ export const useBeforeLeave = (onLeave) => {
     };
   }, []);
 };
+
+export default useBeforeLeave;
