@@ -1,4 +1,4 @@
-export const useConfirm = (message = "Are you sure?", onConfirm, onCancel) => {
+const useConfirm = (onConfirm, onCancel, message = "Are you sure?") => {
   if (typeof onConfirm !== "function") {
     return;
   }
@@ -14,3 +14,5 @@ export const useConfirm = (message = "Are you sure?", onConfirm, onCancel) => {
   };
   return handleConfirm;
 };
+
+export default useConfirm;
