@@ -1,4 +1,4 @@
-export const usePreventLeave = () => {
+const usePreventLeave = () => {
   const listener = (event) => {
     event.preventDefault();
     event.returnValue = "";
@@ -11,3 +11,5 @@ export const usePreventLeave = () => {
   };
   return { enablePrevent, disablePrevent };
 };
+
+export default usePreventLeave;
