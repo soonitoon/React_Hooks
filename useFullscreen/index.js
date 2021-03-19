@@ -1,4 +1,6 @@
-export const useFullscreen = (fullscreenCallback) => {
+import { useRef } from "react";
+
+const useFullscreen = (fullscreenCallback) => {
   const element = useRef();
   const runCallback = (isFull) => {
     if (fullscreenCallback && typeof fullscreenCallback === "function") {
@@ -34,3 +36,5 @@ export const useFullscreen = (fullscreenCallback) => {
 
   return { element, onFullscreen, offFullscreen };
 };
+
+export default useFullscreen;
