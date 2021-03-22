@@ -1,0 +1,29 @@
+{
+  "name": "@sooni-hooks/use-network",
+  "version": "1.0.0",
+  "description": "React Hook to detect user's network state",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/soonitoon/React_Hooks.git"
+  },
+  "keywords": [
+    "React",
+    "Hook",
+    "network",
+    "useNetwork"
+  ],
+  "author": "soonitoon",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/soonitoon/React_Hooks/issues"
+  },
+  "homepage": "https://github.com/soonitoon/React_Hooks#readme",
+  "peerDependencies": {
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1"
+  }
+}
