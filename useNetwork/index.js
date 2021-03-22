@@ -1,4 +1,6 @@
-export const useNetwork = (onChange) => {
+import { useEffect, useState } from "react";
+
+const useNetwork = (onChange) => {
   const [isOnline, setIsOnline] = useState(navigator.onLine);
   const handleChange = () => {
     if (typeof onChange === "function") {
@@ -16,3 +18,5 @@ export const useNetwork = (onChange) => {
   }, []);
   return isOnline;
 };
+
+export default useNetwork;
