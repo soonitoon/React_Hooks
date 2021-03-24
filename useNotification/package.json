@@ -21,9 +21,5 @@
   "bugs": {
     "url": "https://github.com/soonitoon/React_Hooks/issues"
   },
-  "homepage": "https://github.com/soonitoon/React_Hooks#readme",
-  "peerDependencies": {
-    "react": "^17.0.1",
-    "react-dom": "^17.0.1"
-  }
+  "homepage": "https://github.com/soonitoon/React_Hooks#readme"
 }
