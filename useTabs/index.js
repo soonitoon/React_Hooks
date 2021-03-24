@@ -5,12 +5,12 @@ const useTabs = (init, array) => {
     return;
   }
   const [currentTab, setCurrentTab] = useState(init);
-  const onClick = (value) => {
+  const changeTab = (value) => {
     setCurrentTab(value);
   };
   return {
     currentContent: array[currentTab],
-    onClick,
+    changeTab,
   };
 };
 
