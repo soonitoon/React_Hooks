@@ -1,4 +1,4 @@
-export const useTabs = (init, array) => {
+const useTabs = (init, array) => {
   if (!array || !Array.isArray(array)) {
     return;
   }
@@ -11,3 +11,5 @@ export const useTabs = (init, array) => {
     onClick,
   };
 };
+
+export default useTabs;
