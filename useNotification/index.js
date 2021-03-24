@@ -1,4 +1,4 @@
-export const useNotification = (title, options) => {
+const useNotification = (title, options) => {
   if (!("Notification" in window)) {
     return;
   }
@@ -17,3 +17,5 @@ export const useNotification = (title, options) => {
   };
   return sandNotification;
 };
+
+export default useNotification;
