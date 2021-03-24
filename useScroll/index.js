@@ -1,4 +1,4 @@
-export const useScroll = () => {
+const useScroll = () => {
   const [position, setPosition] = useState({
     X: 0,
     Y: 0,
@@ -17,3 +17,5 @@ export const useScroll = () => {
   }, []);
   return position;
 };
+
+export default useScroll;
