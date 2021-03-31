@@ -1,6 +1,6 @@
 {
   "name": "@sooni-hooks/use-tabs",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "React Hook to change tab easy way",
   "main": "index.js",
   "scripts": {
