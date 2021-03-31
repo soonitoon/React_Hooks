@@ -51,3 +51,30 @@ In this example code, when user's `scrollX` exceeds 1000, color of `h1` is chang
 
 2. Install **react** and **react-dom**
    `$ npm i react react-dom`
+
+## Full code
+```js
+import { useEffect, useState } from "react";
+
+const useScroll = () => {
+  const [position, setPosition] = useState({
+    X: 0,
+    Y: 0,
+  });
+  const onScroll = () => {
+    setPosition({
+      X: window.scrollX,
+      Y: window.scrollY,
+    });
+  };
+  useEffect(() => {
+    window.addEventListener("scroll", onScroll);
+    return () => {
+      window.removeEventListener("scroll", onScroll);
+    };
+  }, []);
+  return position;
+};
+
+export default useScroll;
+```
