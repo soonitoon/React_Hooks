@@ -26,7 +26,7 @@ React-Hook that catches user's scroll position easy way.
 
 ## Installation
 1. `$ npm install @sooni-hooks/use-scroll`
-2. Add `import useTabs from "@sooni-hooks/use-scroll"` in your script.
+2. Add `import useScroll from "@sooni-hooks/use-scroll"` in your script.
 3. Done!
 
 ## How to use
