@@ -1,6 +1,6 @@
 {
   "name": "@sooni-hooks/use-prevent-leave",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "React Hook to prevent user from leaving page",
   "main": "index.js",
   "scripts": {
