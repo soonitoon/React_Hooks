@@ -30,3 +30,22 @@ In the example code, If user clicks `eable` button, browser alerts user when use
 You need to install **NPM**
 - Linux : `$ sudo apt install npm`
 - Windows : Go to download link https://nodejs.org/en/download/
+
+## Full code
+```js
+const usePreventLeave = () => {
+  const listener = (event) => {
+    event.preventDefault();
+    event.returnValue = "";
+  };
+  const enablePrevent = () => {
+    window.addEventListener("beforeunload", listener);
+  };
+  const disablePrevent = () => {
+    window.removeEventListener("beforeunload", listener);
+  };
+  return { enablePrevent, disablePrevent };
+};
+
+export default usePreventLeave;
+```
