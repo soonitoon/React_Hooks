@@ -25,3 +25,8 @@ function App() {
 }
 ```
 In the example code, If user clicks `eable` button, browser alerts user when user closes the tab. The prevention is disabled if user clicks `disable` button.
+
+## Development environment setting
+You need to install **NPM**
+- Linux : `$ sudo apt install npm`
+- Windows : Go to download link https://nodejs.org/en/download/
