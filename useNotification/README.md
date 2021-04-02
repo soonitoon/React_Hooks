@@ -50,3 +50,28 @@ function App() {
 You need to install **NPM**
 - Linux : `$ sudo apt install npm`
 - Windows : Go to download link https://nodejs.org/en/download/
+
+## Full code
+```js
+const useNotification = (title, options) => {
+  if (!("Notification" in window)) {
+    return;
+  }
+  const sandNotification = () => {
+    if (Notification.permission !== "granted") {
+      Notification.requestPermission().then((permission) => {
+        if (permission !== "granted") {
+          return;
+        } else {
+          new Notification(title, options);
+        }
+      });
+    } else {
+      new Notification(title, options);
+    }
+  };
+  return sandNotification;
+};
+
+export default useNotification;
+```
