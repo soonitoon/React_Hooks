@@ -31,3 +31,17 @@ If you want to get more information about `Notification` object, visite **MDN**.
 
 Link: https://developer.mozilla.org/en-US/docs/Web/API/Notification/Notification
 
+## Example
+```js
+function App() {
+  const option = {
+    body: "Hello!",
+  };
+  const sandNotification = useNotification("I'm message", option);
+  return (
+    <div className="App">
+      <button onClick={() => sandNotification()}>sand message</button>
+    </div>
+  );
+}
+``
