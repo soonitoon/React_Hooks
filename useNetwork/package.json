@@ -1,6 +1,6 @@
 {
   "name": "@sooni-hooks/use-network",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "React Hook to detect user's network state",
   "main": "index.js",
   "scripts": {
