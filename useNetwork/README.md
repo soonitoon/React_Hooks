@@ -21,3 +21,18 @@ const onChange = (isOnline) => {
 }
 ```
 Also useNetwork returns `isOnline`. This is Boolean value. If user's network is connected, `isOnline`'s value is `true`. If user's network is unconnected, `isOnline`'s value is `false`.
+
+## Example
+```js
+function App() {
+  const onChange = (isOnline) => {
+    console.log(isOnline ? "online" : "offline");
+  };
+  const isOnline = useNetwork(onChange);
+  return (
+    <div className="App">
+      <h1>{JSON.stringify(isOnline)}</h1>
+    </div>
+  );
+}
+```
