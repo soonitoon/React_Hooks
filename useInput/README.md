@@ -29,3 +29,23 @@ useInput returns a object containing `input value` and `onChange function`.
 }
 ```
 They have same name as JSX attributes. So you can use this object inside of JSX tag with `spread operator`.
+
+## Example
+```js
+function App() {
+  const verify = (value) => {
+    if (typeof value === "string") {
+      return true;
+    } else {
+      return false;
+    }
+  };
+  const attributes = useInput("name", verify);
+  return (
+    <div className="App">
+      <h1>{attributes.value}</h1>
+      <input {...attributes}></input>
+    </div>
+  );
+}
+```
