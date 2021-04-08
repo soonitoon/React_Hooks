@@ -8,3 +8,24 @@ React-Hook to get user's input value.
 1. `$ npm install @sooni-hooks/use-input`
 2. Add `import useInput from "@sooni-hooks/use-input"` in your script.
 3. Done!
+
+## How to use
+**useInput** takes two arguments. One is `init value`, the other is `verification function`. `init value` is default value of input. `verification function` checks the input value and returns Boolean value. The example of `verification function` is:
+```js
+const verify = (value) => {
+  if (typeof(value) === "string"){
+    return true
+  } else {
+    return false
+  }
+}
+```
+
+useInput returns a object containing `input value` and `onChange function`.
+```json
+{
+  value: value,
+  onChange: onChange
+}
+```
+They have same name as JSX attributes. So you can use this object inside of JSX tag with `spread operator`.
