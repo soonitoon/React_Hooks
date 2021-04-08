@@ -22,7 +22,7 @@ const verify = (value) => {
 ```
 
 useInput returns a object containing `input value` and `onChange function`.
-```json
+```js
 {
   value: value,
   onChange: onChange
