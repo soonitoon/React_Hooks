@@ -15,3 +15,15 @@ React-Hook to use Fade-In effect easy way
 - delay = 0
 
 `useFadeIn` returns a object that consists of attributes of DOM element. You'll use this object in the DOM element with `spead operator`.
+
+## Example
+```js
+function App() {
+  const attributes = useFadeIn(3, 1);
+  return (
+    <div className="App">
+      <h1 {...attributes}>Hello Hook!</h1>
+    </div>
+  );
+}
+```
