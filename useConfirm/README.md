@@ -30,3 +30,9 @@ function App() {
   );
 }
 ```
+
+## Development environment setting
+
+You need to install **NPM**
+- Linux : `$ sudo apt install npm`
+- Windows : Go to download link https://nodejs.org/en/download/
