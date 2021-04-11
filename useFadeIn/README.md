@@ -8,3 +8,10 @@ React-Hook to use Fade-In effect easy way
 1. `$ npm install @sooni-hooks/use-fade-in`
 2. Add `import useFadeIn from "@sooni-hooks/use-fade-in"` in your script.
 3. Done!
+
+## How to use
+**useFadeIn** takes two argument; `duration` and `delay`. Each argument is property of CSS transition. The default value is:
+- duration = 2
+- delay = 0
+
+`useFadeIn` returns a object that consists of attributes of DOM element. You'll use this object in the DOM element with `spead operator`.
