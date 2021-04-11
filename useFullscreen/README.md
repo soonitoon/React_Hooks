@@ -25,8 +25,8 @@ You can use this callback function as a Fullscreen handler.
 useFullscreen returns an object containing `element`, `onFullscreen`, `offFullscreen`.
 
 - **element**: Reference of DOM element. Put it in  `ref` attribute.
-- **onFullscreen**: Function that turn on the fullscreen mode.
-- **offFullscreen**: Function that turn off the fullscreen mode.
+- **onFullscreen**: Function that turns on the fullscreen mode.
+- **offFullscreen**: Function that turns off the fullscreen mode.
 
 # Example
 ```js
@@ -38,9 +38,7 @@ function App() {
       console.log("Not Fullscreen");
     }
   };
-  const { element, onFullscreen, offFullscreen } = useFullscreen(
-    handleFullscreen
-  );
+  const { element, onFullscreen, offFullscreen } = useFullscreen(handleFullscreen);
   return (
     <div className="App">
       <div ref={element}>
