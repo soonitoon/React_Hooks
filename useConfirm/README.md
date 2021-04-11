@@ -16,3 +16,17 @@ JavaScript function that can get user's confirm.
 - `message` : The String that you want to show on browser confirm window.
 
 `useConfirm` returns `handleConfirm()`. It contains two functions and message that you gave to `useConfirm` as a property. It makes confirm event and runs event handler automatically when you call it.
+
+## Example
+```js
+function App() {
+  const onConfirm = () => console.log("OK");
+  const onCancel = () => console.log("Nope");
+  const handleConfirm = useConfrim(onConfirm, onCancel, "Sure?");
+  return (
+    <div classname="App">
+      <button onClick={handleConfirm}>click</button>
+    </div>
+  );
+}
+```
