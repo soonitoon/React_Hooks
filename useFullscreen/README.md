@@ -27,3 +27,28 @@ useFullscreen returns an object containing `element`, `onFullscreen`, `offFullsc
 - **element**: Reference of DOM element. Put it in  `ref` attribute.
 - **onFullscreen**: Function that turn on the fullscreen mode.
 - **offFullscreen**: Function that turn off the fullscreen mode.
+
+# Example
+```js
+function App() {
+  const handleFullscreen = (isFull) => {
+    if (isFull) {
+      console.log("Fullscreen");
+    } else {
+      console.log("Not Fullscreen");
+    }
+  };
+  const { element, onFullscreen, offFullscreen } = useFullscreen(
+    handleFullscreen
+  );
+  return (
+    <div className="App">
+      <div ref={element}>
+        <img src="https://via.placeholder.com/300" />
+        <button onClick={onFullscreen}>Full</button>
+        <button onClick={offFullscreen}>Exit</button>
+      </div>
+    </div>
+  );
+}
+```
