@@ -36,3 +36,25 @@ function App() {
 You need to install **NPM**
 - Linux : `$ sudo apt install npm`
 - Windows : Go to download link https://nodejs.org/en/download/
+
+## Full code
+```js
+const useConfirm = (onConfirm, onCancel, message = "Are you sure?") => {
+  if (typeof onConfirm !== "function") {
+    return;
+  }
+  if (typeof onCancel !== "function") {
+    return;
+  }
+  const handleConfirm = () => {
+    if (confirm(message)) {
+      onConfirm();
+    } else {
+      onCancel();
+    }
+  };
+  return handleConfirm;
+};
+
+export default useConfirm;
+```
