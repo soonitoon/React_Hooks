@@ -1,6 +1,6 @@
 {
   "name": "@sooni-hooks/use-fullscreen",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "React Hook to use fullscreen easy way",
   "main": "index.js",
   "scripts": {
