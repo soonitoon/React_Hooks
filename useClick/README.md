@@ -9,3 +9,8 @@ React-Hook that connects the function to the DOM element.
 1. `$ npm install @sooni-hooks/use-click`
 2. Add `import useClick from "@sooni-hooks/use-click"` in your script.
 3. Done!
+
+## How to use
+**useClick** takes `handleClick()` as an argument. `handleClick()` is called when user click the element.
+
+`useClick` returns `element` that is reference of the DOM element.
