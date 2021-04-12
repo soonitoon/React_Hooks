@@ -11,3 +11,12 @@ React-Hook that can sences that user will leave the page.
 
 ## How to use
 **useBeforeLeave** takes `onLeave` function as argument. It is called when user will leave the current page(when user's mouse pointer get out of the page throuh the top).
+
+## Example
+```js
+function App() {
+  const onLeave = () => console.log("Don't Leave");
+  useBeforeLeave(onLeave);
+  return <div className="App"></div>;
+}
+```
