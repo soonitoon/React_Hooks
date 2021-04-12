@@ -27,3 +27,12 @@ function App() {
   );
 }
 ```
+
+## Development environment setting
+
+1. First, you need to install **NPM**
+   - Linux : `$ sudo apt install npm`
+   - Windows : Go to download link https://nodejs.org/en/download/
+
+2. Install **react** and **react-dom**
+   `$ npm i react react-dom`
