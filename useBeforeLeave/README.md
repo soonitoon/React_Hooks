@@ -1,8 +1,8 @@
 # useBeforeLeave
-React-Hook that can sences that user will leave the page.
+React-Hook that can sence that user will leave the page.
 
 ## Notice
-- **useBeforeLeave** is custom React-Hook; So it works on only **React environment**.
+**useBeforeLeave** is custom React-Hook; So it works on only **React environment**.
 
 ## Installation
 1. `$ npm install @sooni-hooks/use-before-leave`
