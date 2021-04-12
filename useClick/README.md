@@ -14,3 +14,16 @@ React-Hook that connects the function to the DOM element.
 **useClick** takes `handleClick()` as an argument. `handleClick()` is called when user click the element.
 
 `useClick` returns `element` that is reference of the DOM element.
+
+## Example
+```js
+function App() {
+  const handleClick = () => console.log("Clicked");
+  const element = useClick(handleClick);
+  return (
+    <div className="App">
+      <h1 ref={element}>Click me</h1>
+    </div>
+  );
+}
+```
