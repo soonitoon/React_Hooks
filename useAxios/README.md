@@ -21,6 +21,9 @@ useAxios returns an object containing `state` and `refetch()`.
   - **data**: The data that you want to get.
 - **refetch()** A function that retries fetching data from URL.
 
+If you want to get more information about `Axios`, go to this link:
+https://www.npmjs.com/package/axios
+
 ## Example code
 ```js
 function App() {
