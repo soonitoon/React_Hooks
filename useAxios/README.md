@@ -2,7 +2,7 @@
 React-Hook to use Axios easy way.
 
 ## Notice
-**useBeforeLeave** is custom React-Hook; So it works on only **React environment**.
+**useAxios** is custom React-Hook; So it works on only **React environment**.
 
 ## Installation
 1. `$ npm install @sooni-hooks/use-axios`
