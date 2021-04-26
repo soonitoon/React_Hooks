@@ -2,7 +2,7 @@
 React-Hook to use Fade-In effect easy way
 
 ## Notice
-**useInput** is custom React-Hook; So it works on only **React environment**.
+**useFadeIn** is custom React-Hook; So it works on only **React environment**.
 
 ## Installation
 1. `$ npm install @sooni-hooks/use-fade-in`
