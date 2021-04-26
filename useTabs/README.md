@@ -2,7 +2,7 @@
 React-hook to change tab easy way.
 
 ## Notice
-**useTitle** is custom React-Hook; So it works on only **React environment**.
+**useTabs** is custom React-Hook; So it works on only **React environment**.
 
 ## Installation
 1. `$ npm install @sooni-hooks/use-tabs`
