@@ -1,6 +1,6 @@
 {
   "name": "@sooni-hooks/use-click",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "React Hook to connect Click event and function",
   "main": "index.js",
   "scripts": {
