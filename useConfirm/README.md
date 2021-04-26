@@ -2,7 +2,7 @@
 JavaScript function that can sand browser confirm to the user.
 
 ## Notice
-**useAxios** is in the repository "React_Hooks", but it is not React Hook!🙃 So it doesn't have any dependency modules.
+**useConfirm** is in the repository "React_Hooks", but it is not React Hook!🙃 So it doesn't have any dependency modules.
 
 ## Installation
 1. `$ npm install @sooni-hooks/use-confirm`
