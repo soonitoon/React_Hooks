@@ -80,7 +80,7 @@ export default useBeforeLeave;
 React-Hook that connects the function to the DOM element.
 
 ## Notice
-- **useInput** is custom React-Hook; So it works on only **React environment**.
+- **useClick** is custom React-Hook; So it works on only **React environment**.
 - I know that the function of useClick is same as `onClick` attribute.🙃 It is a functional programming practice!
 
 ## Installation
@@ -144,7 +144,7 @@ export default useClick;
 JavaScript function that can sand browser confirm to the user.
 
 ## Notice
-**useNotification** is in the repository "React_Hooks", but it is not React Hook!🙃 So it doesn't have any dependency modules.
+**useConfirm** is in the repository "React_Hooks", but it is not React Hook!🙃 So it doesn't have any dependency modules.
 
 ## Installation
 1. `$ npm install @sooni-hooks/use-confirm`
@@ -205,7 +205,7 @@ export default useConfirm;
 React-Hook to use Fade-In effect easy way
 
 ## Notice
-**useInput** is custom React-Hook; So it works on only **React environment**.
+**useFadeIn** is custom React-Hook; So it works on only **React environment**.
 
 ## Installation
 1. `$ npm install @sooni-hooks/use-fade-in`
@@ -266,7 +266,7 @@ export default useFadeIn;
 React-Hook to use Fullscreen easy way
 
 ## Notice
-**useInput** is custom React-Hook; So it works on only **React environment**.
+**useFullscreen** is custom React-Hook; So it works on only **React environment**.
 
 ## Installation
 1. `$ npm install @sooni-hooks/use-fullscreen`
@@ -664,7 +664,7 @@ export default usePreventLeave;
 React-Hook that catches user's scroll position easy way.
 
 ## Notice
-**useTitle** is custom React-Hook; So it works on only **React environment**.
+**useScroll** is custom React-Hook; So it works on only **React environment**.
 
 ## Installation
 1. `$ npm install @sooni-hooks/use-scroll`
@@ -745,7 +745,7 @@ export default useScroll;
 React-hook to change tab easy way.
 
 ## Notice
-**useTitle** is custom React-Hook; So it works on only **React environment**.
+**useTabs** is custom React-Hook; So it works on only **React environment**.
 
 ## Installation
 1. `$ npm install @sooni-hooks/use-tabs`
@@ -888,7 +888,7 @@ export default useTitle;
 React-Hook to use Axios easy way.
 
 ## Notice
-**useBeforeLeave** is custom React-Hook; So it works on only **React environment**.
+**useAxios** is custom React-Hook; So it works on only **React environment**.
 
 ## Installation
 1. `$ npm install @sooni-hooks/use-axios`
