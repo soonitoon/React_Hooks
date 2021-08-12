@@ -2,37 +2,44 @@
 
 Useful Hooks for creating React-pages.
 
+NPM packages: https://www.npmjs.com/~soonitoon?tab=packages
+
 ## Hook List
 
-- [X] useBeforeLeave
-- [X] useClick
-- [X] useConfirm
-- [X] useFadeIn
-- [X] useFullscreen
-- [X] useInput
-- [X] useNetwork
-- [X] useNotification
-- [X] usePreventLeave
-- [X] useScroll
-- [X] useTabs
-- [X] useTitle
-- [X] useAxios
+- [x] useBeforeLeave
+- [x] useClick
+- [x] useConfirm
+- [x] useFadeIn
+- [x] useFullscreen
+- [x] useInput
+- [x] useNetwork
+- [x] useNotification
+- [x] usePreventLeave
+- [x] useScroll
+- [x] useTabs
+- [x] useTitle
+- [x] useAxios
 
 # useBeforeLeave
+
 React-Hook that can sence that user will leave the page.
 
 ## Notice
+
 **useBeforeLeave** is custom React-Hook; So it works on only **React environment**.
 
 ## Installation
+
 1. `$ npm install @sooni-hooks/use-before-leave`
 2. Add `import useBeforeLeave from "@sooni-hooks/use-before-leave"` in your script.
 3. Done!
 
 ## How to use
+
 **useBeforeLeave** takes `onLeave` function as argument. It is called when user will leave the current page(when user's mouse pointer get out of the page throuh the top).
 
 ## Example
+
 ```js
 function App() {
   const onLeave = () => console.log("Don't Leave");
@@ -44,6 +51,7 @@ function App() {
 ## Development environment setting
 
 1. First, you need to install **NPM**
+
    - Linux : `$ sudo apt install npm`
    - Windows : Go to download link https://nodejs.org/en/download/
 
@@ -51,6 +59,7 @@ function App() {
    `$ npm i react react-dom`
 
 ## Full code
+
 ```js
 import { useEffect } from "react";
 
@@ -77,23 +86,28 @@ export default useBeforeLeave;
 ```
 
 # useClick
+
 React-Hook that connects the function to the DOM element.
 
 ## Notice
+
 - **useClick** is custom React-Hook; So it works on only **React environment**.
 - I know that the function of useClick is same as `onClick` attribute.🙃 It is a functional programming practice!
 
 ## Installation
+
 1. `$ npm install @sooni-hooks/use-click`
 2. Add `import useClick from "@sooni-hooks/use-click"` in your script.
 3. Done!
 
 ## How to use
+
 **useClick** takes `handleClick()` as an argument. `handleClick()` is called when user click the element.
 
 `useClick` returns `element` that is reference of the DOM element.
 
 ## Example
+
 ```js
 function App() {
   const handleClick = () => console.log("Clicked");
@@ -109,6 +123,7 @@ function App() {
 ## Development environment setting
 
 1. First, you need to install **NPM**
+
    - Linux : `$ sudo apt install npm`
    - Windows : Go to download link https://nodejs.org/en/download/
 
@@ -116,6 +131,7 @@ function App() {
    `$ npm i react react-dom`
 
 ## Full code
+
 ```js
 import { useRef, useEffect } from "react";
 
@@ -141,18 +157,23 @@ export default useClick;
 ```
 
 # useConfirm
+
 JavaScript function that can sand browser confirm to the user.
 
 ## Notice
+
 **useConfirm** is in the repository "React_Hooks", but it is not React Hook!🙃 So it doesn't have any dependency modules.
 
 ## Installation
+
 1. `$ npm install @sooni-hooks/use-confirm`
 2. Add `import useConfirm from "@sooni-hooks/use-confirm"` in your script.
 3. Done!
 
 ## How to use
+
 **useConfirm** has three properties.
+
 - `onConfirm` : Callback function that is called when confirm event is happened.
 - `onCancel` : Callback function that is called when confirm is rejected by user.
 - `message` : The String that you want to show on browser confirm window.
@@ -160,6 +181,7 @@ JavaScript function that can sand browser confirm to the user.
 `useConfirm` returns `handleConfirm()`. It contains two functions and message that you gave to `useConfirm` as a property. It makes confirm event and runs event handler automatically when you call it.
 
 ## Example
+
 ```js
 function App() {
   const onConfirm = () => console.log("OK");
@@ -176,10 +198,12 @@ function App() {
 ## Development environment setting
 
 You need to install **NPM**
+
 - Linux : `$ sudo apt install npm`
 - Windows : Go to download link https://nodejs.org/en/download/
 
 ## Full code
+
 ```js
 const useConfirm = (onConfirm, onCancel, message = "Are you sure?") => {
   if (typeof onConfirm !== "function") {
@@ -202,24 +226,30 @@ export default useConfirm;
 ```
 
 # useFadeIn
+
 React-Hook to use Fade-In effect easy way
 
 ## Notice
+
 **useFadeIn** is custom React-Hook; So it works on only **React environment**.
 
 ## Installation
+
 1. `$ npm install @sooni-hooks/use-fade-in`
 2. Add `import useFadeIn from "@sooni-hooks/use-fade-in"` in your script.
 3. Done!
 
 ## How to use
+
 **useFadeIn** takes two argument; `duration` and `delay`. Each argument is property of CSS transition. The default value is:
+
 - duration = 2
 - delay = 0
 
 `useFadeIn` returns a object that consists of attributes of DOM element. You'll use this object in the DOM element with `spead operator`.
 
 ## Example
+
 ```js
 function App() {
   const attributes = useFadeIn(3, 1);
@@ -234,6 +264,7 @@ function App() {
 ## Development environment setting
 
 1. First, you need to install **NPM**
+
    - Linux : `$ sudo apt install npm`
    - Windows : Go to download link https://nodejs.org/en/download/
 
@@ -241,6 +272,7 @@ function App() {
    `$ npm i react react-dom`
 
 ## Full code
+
 ```js
 import { useEffect, useRef } from "react";
 
@@ -263,36 +295,43 @@ export default useFadeIn;
 ```
 
 # useFullscreen
+
 React-Hook to use Fullscreen easy way
 
 ## Notice
+
 **useFullscreen** is custom React-Hook; So it works on only **React environment**.
 
 ## Installation
+
 1. `$ npm install @sooni-hooks/use-fullscreen`
 2. Add `import useFullscreen from "@sooni-hooks/use-fullscreen"` in your script.
 3. Done!
 
 ## How to use
+
 **useFullscreen** takes `fullscreenCallback` function as an argument. `fullscreenCallback` takes Boolean argument. The example of `fullscreenCallback` is:
+
 ```js
 const fullscreenCallback = (isFull) => {
-  if (isFull){
-    console.log("Fullscreen")
+  if (isFull) {
+    console.log("Fullscreen");
   } else {
-    console.log("Not Fullscreen")
+    console.log("Not Fullscreen");
   }
-}
+};
 ```
+
 You can use this callback function as a Fullscreen handler.
 
 useFullscreen returns an object containing `element`, `onFullscreen`, `offFullscreen`.
 
-- **element**: Reference of DOM element. Put it in  `ref` attribute.
+- **element**: Reference of DOM element. Put it in `ref` attribute.
 - **onFullscreen**: Function that turns on the fullscreen mode.
 - **offFullscreen**: Function that turns off the fullscreen mode.
 
 # Example
+
 ```js
 function App() {
   const handleFullscreen = (isFull) => {
@@ -302,7 +341,8 @@ function App() {
       console.log("Not Fullscreen");
     }
   };
-  const { element, onFullscreen, offFullscreen } = useFullscreen(handleFullscreen);
+  const { element, onFullscreen, offFullscreen } =
+    useFullscreen(handleFullscreen);
   return (
     <div className="App">
       <div ref={element}>
@@ -318,6 +358,7 @@ function App() {
 ## Development environment setting
 
 1. First, you need to install **NPM**
+
    - Linux : `$ sudo apt install npm`
    - Windows : Go to download link https://nodejs.org/en/download/
 
@@ -325,6 +366,7 @@ function App() {
    `$ npm i react react-dom`
 
 # Full code
+
 ```js
 import { useRef } from "react";
 
@@ -369,38 +411,46 @@ export default useFullscreen;
 ```
 
 # useInput
+
 React-Hook to get user's input value.
 
 ## Notice
+
 **useInput** is custom React-Hook; So it works on only **React environment**.
 
 ## Installation
+
 1. `$ npm install @sooni-hooks/use-input`
 2. Add `import useInput from "@sooni-hooks/use-input"` in your script.
 3. Done!
 
 ## How to use
+
 **useInput** takes two arguments. One is `init value`, the other is `verification function`. `init value` is default value of input. `verification function` checks the input value and returns Boolean value. The example of `verification function` is:
+
 ```js
 const verify = (value) => {
-  if (typeof(value) === "string"){
-    return true
+  if (typeof value === "string") {
+    return true;
   } else {
-    return false
+    return false;
   }
-}
+};
 ```
 
 useInput returns a object containing `input value` and `onChange function`.
+
 ```js
 {
   value: value,
   onChange: onChange
 }
 ```
+
 They have same name as JSX attributes. So you can use this object inside of JSX tag with `spread operator`.
 
 ## Example
+
 ```js
 function App() {
   const verify = (value) => {
@@ -423,6 +473,7 @@ function App() {
 ## Development environment setting
 
 1. First, you need to install **NPM**
+
    - Linux : `$ sudo apt install npm`
    - Windows : Go to download link https://nodejs.org/en/download/
 
@@ -430,6 +481,7 @@ function App() {
    `$ npm i react react-dom`
 
 ## Full code
+
 ```js
 import { useState } from "react";
 
@@ -457,30 +509,37 @@ export default useInput;
 ```
 
 # useNetwork
+
 React-Hook that can catch user's network status.
 
 ## Notice
+
 **useNetwork** is custom React-Hook; So it works on only **React environment**.
 
 ## Installation
+
 1. `$ npm install @sooni-hooks/use-network`
 2. Add `import useNetwork from "@sooni-hooks/use-network"` in your script.
 3. Done!
 
 ## How to use
+
 **useNetwork** takes `onChange function` as argument. This function takes the Boolean value. And it works according to the Boolean value. Example is:
+
 ```js
 const onChange = (isOnline) => {
-  if (isOnline){
+  if (isOnline) {
     console.log("Online");
   } else {
     console.log("Offline");
   }
-}
+};
 ```
+
 Also useNetwork returns `isOnline`. This is Boolean value. If user's network is connected, `isOnline`'s value is `true`. If user's network is unconnected, `isOnline`'s value is `false`.
 
 ## Example
+
 ```js
 function App() {
   const onChange = (isOnline) => {
@@ -498,6 +557,7 @@ function App() {
 ## Development environment setting
 
 1. First, you need to install **NPM**
+
    - Linux : `$ sudo apt install npm`
    - Windows : Go to download link https://nodejs.org/en/download/
 
@@ -505,6 +565,7 @@ function App() {
    `$ npm i react react-dom`
 
 ## Full code
+
 ```js
 import { useEffect, useState } from "react";
 
@@ -531,18 +592,23 @@ export default useNetwork;
 ```
 
 # useNotification
+
 Javascript Function that sends browser message to the user.
 
 ## Notice
+
 **useNotification** is in the repository "React_Hooks", but it is not React Hook!🙃 So it doesn't have any dependency modules.
 
 ## Installation
+
 1. `$ npm install @sooni-hooks/use-notification`
 2. Add `import useNotification from "@sooni-hooks/use-notification"` in your script.
 3. Done!
 
 ## How to use
+
 **useNotification** takes two arguments;
+
 1. **title**: Message title.
 2. **options**: An object containing custom setting.
 
@@ -564,6 +630,7 @@ If you want to get more information about `Notification` object, visite **MDN**.
 Link: https://developer.mozilla.org/en-US/docs/Web/API/Notification/Notification
 
 ## Example
+
 ```js
 function App() {
   const option = {
@@ -579,11 +646,14 @@ function App() {
 ```
 
 ## Development environment setting
+
 You need to install **NPM**
+
 - Linux : `$ sudo apt install npm`
 - Windows : Go to download link https://nodejs.org/en/download/
 
 ## Full code
+
 ```js
 const useNotification = (title, options) => {
   if (!("Notification" in window)) {
@@ -609,20 +679,25 @@ export default useNotification;
 ```
 
 # usePreventLeave
+
 JavaScript Function that prevent user from leaving current page.
 
 ## Notice
+
 **usePreventLeave** is in the repository "React_Hooks", but it is not React Hook!🙃 So it doesn't have any dependency modules.
 
 ## Installation
+
 1. `$ npm install @sooni-hooks/use-prevent-leave`
 2. Add `import usePreventLeave from "@sooni-hooks/use-prevent-leave"` in your script.
 3. Done!
 
 ## How to use
+
 **usePreventLeave** returns `enablePrevent()` and `disablePrevent()`. You can call `enablePrevent()` when you want to prevent user from leaving current page; and the opposite is possible as well.
 
 ## Example
+
 ```js
 function App() {
   const { enablePrevent, disablePrevent } = usePreventLeave();
@@ -634,14 +709,18 @@ function App() {
   );
 }
 ```
+
 In the example code, If user clicks `eable` button, browser alerts user when user closes the tab. The prevention is disabled if user clicks `disable` button.
 
 ## Development environment setting
+
 You need to install **NPM**
+
 - Linux : `$ sudo apt install npm`
 - Windows : Go to download link https://nodejs.org/en/download/
 
 ## Full code
+
 ```js
 const usePreventLeave = () => {
   const listener = (event) => {
@@ -661,21 +740,27 @@ export default usePreventLeave;
 ```
 
 # useScroll
+
 React-Hook that catches user's scroll position easy way.
 
 ## Notice
+
 **useScroll** is custom React-Hook; So it works on only **React environment**.
 
 ## Installation
+
 1. `$ npm install @sooni-hooks/use-scroll`
 2. Add `import useScroll from "@sooni-hooks/use-scroll"` in your script.
 3. Done!
 
 ## How to use
+
 **useScroll** returns user's current scroll position object.
+
 ```js
 {X: 0, Y: 0}
 ```
+
 This object can be used to create interactive page.
 
 ## Example
@@ -703,11 +788,13 @@ function App() {
   );
 }
 ```
+
 In this example code, when user's `scrollX` exceeds 1000, color of `h1` is changed to blue.
 
 ## Development environment setting
 
 1. First, you need to install **NPM**
+
    - Linux : `$ sudo apt install npm`
    - Windows : Go to download link https://nodejs.org/en/download/
 
@@ -715,6 +802,7 @@ In this example code, when user's `scrollX` exceeds 1000, color of `h1` is chang
    `$ npm i react react-dom`
 
 ## Full code
+
 ```js
 import { useEffect, useState } from "react";
 
@@ -742,18 +830,23 @@ export default useScroll;
 ```
 
 # useTabs
+
 React-hook to change tab easy way.
 
 ## Notice
+
 **useTabs** is custom React-Hook; So it works on only **React environment**.
 
 ## Installation
+
 1. `$ npm install @sooni-hooks/use-tabs`
 2. Add `import useTabs from "@sooni-hooks/use-tabs"` in your script.
 3. Done!
 
 ## How to use
+
 **useTabs** takes two arguments. One is `default tab index`, the other is `tab content array`. This is example of "tab content array":
+
 ```js
 const tabContentArray = [
   {
@@ -766,9 +859,10 @@ const tabContentArray = [
   },
 ];
 ```
+
 useTabs checks whether the `tab content array` is valid. If it is not, the Hook is terminated.
 
-useTabs returns object that contains `currentContent` and `changeTab()`. `changeTab()` takes **tab index** as argument. 
+useTabs returns object that contains `currentContent` and `changeTab()`. `changeTab()` takes **tab index** as argument.
 
 ## Example
 
@@ -795,6 +889,7 @@ function App() {
   );
 }
 ```
+
 In the example code, if user clicks `button`, tab index is changed 0 to 1. Then the `title` and `content` are automatically changed.
 
 ## Development environment setting
@@ -829,31 +924,36 @@ export default useTabs;
 ```
 
 # useTitle
+
 React-hook to change HTML title easy way.
 
 ## Notice
+
 **useTitle** is custom React-Hook; So it works on only **React environment**.
 
 ## Installation
+
 1. `$ npm install @sooni-hooks/use-title`
 2. Add `import useTitle from "@sooni-hooks/use-title"` in your script.
 3. Done!
 
 ## How to use
+
 **useTitle** returns `setTitle()`. setTitle takes HTML title as argument. If you put a HTML title in the function, the HTML title is automatically changed!
 
 ## Example
 
 ```js
 function App() {
-    const setTitle = useTitle("defaultTitle");
-    return (
-        <div className="App">
-        	<h1 onClick={()=>setTitle("changedTitle")}></h1>
-        </div>
-    );
+  const setTitle = useTitle("defaultTitle");
+  return (
+    <div className="App">
+      <h1 onClick={() => setTitle("changedTitle")}></h1>
+    </div>
+  );
 }
 ```
+
 In the example code, if user clicks `h1`, HTML title will be changed "defaultTitle" to "changedTitle".
 
 ## Development environment setting
@@ -881,26 +981,31 @@ const useTitle = (init) => {
 };
 
 export default useTitle;
-
 ```
 
 # useAxios
+
 React-Hook to use Axios easy way.
 
 ## Notice
+
 **useAxios** is custom React-Hook; So it works on only **React environment**.
 
 ## Installation
+
 1. `$ npm install @sooni-hooks/use-axios`
 2. Add `import useAxios from "@sooni-hooks/use-axios"` in your script.
 3. Done!
 
 ## How to use
+
 **useAxios** has two parameters.
+
 - **opts**: Config to `axios`
 - **axiosInstance**: A request method. If you don't give any argument, default instance is `axios`.
 
 useAxios returns an object containing `state` and `refetch()`.
+
 - **state**: An object containing `loading`, `error`, `data`.
   - **loading**: Default value is `true`. When fetching is completed, It changes to `false`.
   - **error**: The error message.
@@ -911,6 +1016,7 @@ If you want to get more information about `Axios`, go to this link:
 https://www.npmjs.com/package/axios
 
 ## Example code
+
 ```js
 function App() {
   const options = {
